@@ -71,3 +71,29 @@
 // Answer of Question 2
 // var BirthYear=2005;
 // document.write("<h1>"+ "My Birth year is"+ " "+ BirthYear+"</h1>"+ " \n"+ "<p>"+"Data type of my declare variable is number" + "</p>")
+
+// var rizwan = 78;
+// var TimSouthee = 2;
+// var n = 100;
+
+var BabarAzam = 0, rizwan = 29;
+var n = 6;
+var TimSouthee = 2;
+
+for (var i = 0; i < n; i++) { // Use a for loop
+    BabarAzam++; // Increment BabarAzam
+    document.write("<h1>" + "Babar has Runs: " + BabarAzam + "</h1>"); // Display Babar's runs
+    rizwan++; // Increment rizwan
+    document.write("<h1>" + "Rizwan has Runs: " + rizwan + "</h1>"); // Display Rizwan's runs
+    
+    var partnership = rizwan - BabarAzam; // Calculate partnership
+    
+    // Check if it's the 2nd ball of Tim Southee
+    if (TimSouthee !==7) { 
+        document.write("<h1>It's " + TimSouthee + " ball of Tim Southee</h1>"); // Display message for Tim Southee
+        TimSouthee++;
+    }
+  
+    document.write("<hr/>");
+    document.write("<h1>" + "On Every ball They did a partnership of: " + partnership + "</h1>"); // Display partnership
+}
